@@ -17,8 +17,6 @@
 }
 
 main.container {
-
-
   display: grid;
   grid-template: 200px 1fr / 1fr 4fr;
 }
@@ -29,6 +27,10 @@ main.container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  position: relative;
+  z-index: 10;
+  box-shadow: 10px 5px 5px #ddd;
 }
 
 .header.container > div:first-child {
@@ -51,6 +53,9 @@ main.container {
 }
 
 .sidebar.container {
+  display: grid;
+  grid-template-rows: 100px auto;
+
   padding: 10px;
   background-color: var(--primary-color);
   color: var(--off-white-secondary);
@@ -58,11 +63,23 @@ main.container {
   grid-area: 1 / 1 / 6 / 2;
 }
 
+.sidebar h2 {
+  display: inline;
+  position: relative;
+  top: -8px;
+  left: 4px;
+}
+
+.sidebar.container img {
+  filter: invert(1);
+}
+
 nav > ul {
   list-style-type: none;
+  padding-top: 20px;
 
   display: grid;
-  gap: 5px;
+  gap: 7px;
 }
 
 .main-content.container {
@@ -94,7 +111,7 @@ nav > ul {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 20px;;
 }
 
@@ -107,6 +124,7 @@ nav > ul {
   border-radius: 5px;
   border: 1px;
   border-left: 3px solid var(--secondary-color);
+  box-shadow: 10px 5px 5px #ddd;
 }
 
 .announcements {
