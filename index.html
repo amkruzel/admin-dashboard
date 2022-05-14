@@ -11,8 +11,8 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
-  <main class="container">
-    <div class="header container">
+  <main class="main-container">
+    <div class="header-container">
       <div>
         <label for="search">icon</label>
         <input type="text" name="search">
@@ -27,43 +27,49 @@
 
     </div>
 
-    <div class="sidebar container">
-      
-      <div class="sidebar-header">
-        <img src="/icons/view-dashboard.svg">
-        <h2>Dashboard</h2>
+    <div class="sidebar-container">
+      <div class="sidebar-wrapper">
+        <div class="sidebar-header">
+          <img src="/icons/view-dashboard.svg">
+          <h2>Dashboard</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <img src="/icons/home.svg" alt=""> Home
+            </li>
+            <li>
+              <img src="/icons/account.svg" alt=""> Profile
+            </li>
+            <li>
+              <img src="/icons/message.svg" alt=""> Messages
+            </li>
+            <li>
+              <img src="/icons/history.svg" alt="" >History
+            </li>
+            <li>
+              <img src="/icons/calendar-check.svg" alt=""> Tasks
+            </li>
+            <li>
+              <img src="/icons/account-group.svg" alt=""> Communities
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="/icons/cog-outline.svg" alt=""> Settings
+            </li>
+            <li>
+              <img src="/icons/help-box.svg" alt=""> Support
+            </li>
+            <li>
+              <img src="/icons/shield-account.svg" alt=""> Privacy
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <img src="/icons/home.svg" alt="">
-            Home
-          </li>
-          <li>
-            <img src="/icons/account.svg" alt="">
-            Profile
-          </li>
-          <li>
-            <img src="/icons/message.svg" alt="">
-            Messages
-          </li>
-          <li>
-            <img src="/icons/history.svg" alt="">
-            History
-          </li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-        <br>
-        <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
-      </nav>
     </div>
 
-    <div class="main-content container">
+    <div class="main-content-container">
       <div class="projects-container">
         <div class="projects-header">
           <h2>Your Projects</h2>
@@ -72,32 +78,56 @@
           <div class="proj-box">
             <h3>Super Cool Project</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus at augue eget arcu dictum.</p>
-            <div></div>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
           <div class="proj-box">
             <h3>Less Cool Project</h3>
             <p>Ultricies tristique nulla aliquet enim tortor at auctor.</p>
-            <div></div>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
           <div class="proj-box">
             <h3>Impossible App</h3>
             <p>Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Augue eget arcu dictum varius duis at consectetur.</p>
-            <div></div>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
           <div class="proj-box">
             <h3>Easy App</h3>
             <p>Sodales ut eu sem integer vitae. Laoreet non curabitur gravida arcu.</p>
-            <div></div>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
           <div class="proj-box">
             <h3>Ad Blocker</h3>
             <p>Dictum at tempor commodo ullamcorper a. Fringilla ut morbi tincidunt augue interdum velit euismod in. Volutpat sed cras ornare arcu dui vivamus arcu felis.</p>
-            <div></div>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
           <div class="proj-box">
             <h3>Money Maker</h3>
-            <p></p>
-            <div>Mauris vitae ultricies leo integer malesuada nunc vel risus. Turpis cursus in hac habitasse platea dictumst quisque.</div>
+            <p>Mauris vitae ultricies leo integer malesuada nunc vel risus. Turpis cursus in hac habitasse platea dictumst quisque.</p>
+            <div>
+              <img src="/icons/star-plus-outline.svg" alt="">
+              <img src="/icons/eye-plus-outline.svg" alt="">
+              <img src="/icons/share-variant.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +136,22 @@
           <h2>Announcements</h2>
         </div>
         <div class="announcements">
-
+          <div>
+            <div class="announcements-box">
+              <h5>Site Maintenance</h5>
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+            </div>
+            <hr>
+            <div class="announcements-box">
+              <h5>Community Share Day</h5>
+              <p>Praesent auctor quam et ligula dapibus, ac eleifend nibh tincidunt. Pellentesque in...</p>
+            </div>
+            <hr>
+            <div class="announcements-box">
+              <h5>Updated Privacy Policy</h5>
+              <p>Proin non erat aliquam sem bibendum accumsan. Donec at massa interdum, aliquam ex in...</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="trending-container">
@@ -114,7 +159,9 @@
           <h2>Trending</h2>
         </div>
         <div class="trending">
-
+          <div>
+            
+          </div>
         </div>
       </div>
     </div>
