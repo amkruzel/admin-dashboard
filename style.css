@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #7c3aed;
+  --primary-color: #8951eb;
   --secondary-color: #ff8d4b;
 
   --off-white-primary: #efe6fd;
@@ -18,7 +18,13 @@ SETUP for the THREE SECTIONS
 
 .main-container {
   display: grid;
-  grid-template: 200px 1fr / 1fr 4fr;
+  grid-template: 240px 1fr / 1fr 4fr;
+}
+
+@media only screen and (min-width: 807px) {
+  .main-container {
+    grid-template-rows: 200px 1fr;
+  }
 }
 
 /*
@@ -31,6 +37,8 @@ HEADER
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 20px ;
+  gap: 20px;
 
   position: relative;
   z-index: 10;
@@ -38,15 +46,31 @@ HEADER
 }
 
 .header-container > div:first-child {
-  width: 60%;
+  min-width: 200px;
+  flex-grow: 2.5;
 }
 
 .header-container > div:nth-child(2) {
-  width: 40%;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
 .header-container > div:nth-child(3) {
   width: 50%;
+
+  display: grid;
+  grid-template-columns: 70px;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-name {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .header-container > div:last-child {
@@ -54,6 +78,24 @@ HEADER
   display: inline-flex;
   gap: 20px;
   justify-content: flex-end;
+}
+.header-container label {
+  position: relative;
+  bottom: -6px;
+}
+
+.header-container input {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 80%;
+
+  padding: 0 10px;
+}
+
+.header-container input:focus {
+  outline: 1px solid var(--primary-color);
 }
 
 button {
@@ -76,6 +118,7 @@ SIDEBAR
   grid-template-rows: 100px auto;
 
   padding: 10px;
+  padding-top: 40px;
   background-color: var(--primary-color);
   color: var(--off-white-secondary);
 
@@ -86,20 +129,27 @@ SIDEBAR
   position: fixed;
 }
 
+.sidebar-header {
+  display: grid;
+  grid-template-columns: 50px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+/*
 .sidebar h2 {
   display: inline;
   position: relative;
-  top: -8px;
-  left: 4px;
+  top: 0px;
+  left: 0px;
 }
-
+*/
 .sidebar-container img {
   filter: invert(1);
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 20px 15px 20px;
+  padding: 20px 15px;
 
   display: grid;
   gap: 7px;
@@ -171,11 +221,12 @@ PROJECTS section
 
   border-radius: 5px;
   border: 1px;
-  border-left: 3px solid var(--secondary-color);
+  border-left: 5px solid var(--secondary-color);
   box-shadow: 10px 5px 5px #ddd;
 
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .proj-box > div {
@@ -222,4 +273,24 @@ ANNOUNCEMENTS and TRENDING sections
 
 hr {
   border: 0.5px solid #bbb;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 55px;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.trending-user > div {
+  font-size: .8rem;
+
+  display: grid;
+  align-content: center;
+  gap: 2px;
+}
+
+.trending-user > div > div:last-child {
+  color: #555;
+  font-weight: 300;
 }
