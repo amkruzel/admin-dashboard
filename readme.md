@@ -8,7 +8,7 @@ The page is not meant to be responsive, and was made using only html and css.
 
 ## Usage
 
-You can see the completed project [here](#) where it is hosted using GitHub Pages.
+You can see the completed project [here](https://amkruzel.github.io/admin-dashboard/) where it is hosted using GitHub Pages.
 
 ## License
 MIT
