@@ -135,14 +135,7 @@ SIDEBAR
   grid-auto-flow: column;
   align-items: center;
 }
-/*
-.sidebar h2 {
-  display: inline;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-*/
+
 .sidebar-container img {
   filter: invert(1);
 }
